@@ -284,6 +284,12 @@ a {
     transition: var(--transition);
 }
 
+.arrow__icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
 .hero__btn:hover {
     background-color: var(--color-blue);
 }
@@ -772,6 +778,7 @@ a {
     .hero__title .bold {
         font-style: italic;
     }
+
     .hero__image-wrapper {
         margin-top: 31px;
         max-width: 210px;
