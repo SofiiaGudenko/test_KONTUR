@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Школа программирования</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__nav">
+            <div class="header__nav-container">
+              <a href="#" class="logo"
+                ><span class="logo__accent-blue">C</span>o<span
+                  class="logo__accent-orange"
+                  >D</span
+                >e</a
+              >
+              <nav class="nav__menu">
+                <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Чему вы научитесь</a></li>
+                  <li><a href="#" class="nav__link">Процесс обучения</a></li>
+                  <li><a href="#" class="nav__link">Стоимость</a></li>
+                  <li><a href="#" class="nav__link">Контакты</a></li>
+                  <li><a href="#" class="nav__link">Регистрация</a></li>
+                </ul>
+              </nav>
+            </div>
+            <a href="tel:+74993489396" class="header__phone"
+              >+7 (499) 348 93 96</a
+            >
+            <button class="header__burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__content">
+                    <div class="hero__text">
+                      <h1 class="hero__title">
+                        Школа <span class="curly">{</span
+                        ><span class="bold">программирования</span
+                        ><span class="curly">}</span><br />
+                        для тех, кому нужны реальные навыки, <br />а не просто
+                        сертификат
+                      </h1>
+                      <p class="hero__desc">
+                        Закажите звонок, и наш специалист свяжется с вами в
+                        ближайшее время
+                      </p>
+                      <button class="hero__btn modal-open-btn">
+                        Заказать звонок <span>↗</span>
+                      </button>
+                    </div>
+                    <div class="hero__image-wrapper">
+                      <img
+                        src="./images/banner-1.svg"
+                        alt="Клавиатура"
+                        class="hero__image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__content">
+                    <div class="hero__text">
+                      <h1 class="hero__title">
+                        Обучение <br />
+                        через практику
+                      </h1>
+                      <p class="hero__desc">
+                        Всё, что вы узнали, вы тут же начинаете применять на
+                        практике. Вы сразу видите результаты своего труда.
+                      </p>
+                      <button class="hero__btn modal-open-btn">
+                        Заказать звонок <span>↗</span>
+                      </button>
+                    </div>
+
+                    <div class="hero__image-wrapper">
+                      <img
+                        src="./images/banner-2.svg"
+                        alt="Монитор"
+                        class="hero__image"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__content">
+                    <div class="hero__text">
+                      <h1 class="hero__title">
+                        Весь материал разбит на небольшие уроки
+                      </h1>
+                      <p class="hero__desc">
+                        Теория и практика подаются маленькими порциями. Так вам
+                        будет легче усваивать новые знания.
+                      </p>
+                      <button class="hero__btn modal-open-btn">
+                        Заказать звонок <span>↗</span>
+                      </button>
+                    </div>
+
+                    <div class="hero__image-wrapper">
+                      <img
+                        src="./images/banner-3.svg"
+                        alt="Монитор"
+                        class="hero__image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev custom__arrow-prev">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 12H5M5 12L11 6M5 12L11 18"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next custom__arrow-next">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="#22253B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main class="main">
+        <section class="features">
+          <div class="features__container">
+            <h2 class="features__title">
+              Обучение в CoDe – это <br />
+              удобно и результативно
+            </h2>
+            <div class="features__grid">
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-1.svg" alt="" />
+                  <h3>Огромное количество практики</h3>
+                  <p>
+                    Более 500 самостоятельных заданий и 20 полноценных больших
+                    проектов
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-2.svg" alt="" />
+                  <h3>Современные методики обучения</h3>
+                  <p>
+                    Спиральное обучение: погружаемся в материал постепенно,
+                    виток за витком
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-3.svg" alt="" />
+                  <h3>Простое и понятное изложение</h3>
+                  <p>Вместо заумных терминов – примеры из реального мира</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-4.svg" alt="" />
+                  <h3>Гибкий график занятий</h3>
+                  <p>Учитесь в любое время в удобном для вас темпе</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-5.svg" alt="" />
+                  <h3>Прямая связь с опытными программистами</h3>
+                  <p>Задавайте вопросы и отправляйте свой код на проверку</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__content">
+                  <img src="./images/card-6.svg" alt="" />
+                  <h3>Оплата небольшими частями</h3>
+                  <p>Платите только за тот материал, который изучаете</p>
+                </div>
+              </div>
+              <div class="feature feature--full">
+                <div class="feature__content">
+                  <img src="./images/card-7.svg" alt="" />
+                  <div class="feature--full-content">
+                    <h3>Быстрый и легкий возврат</h3>
+                    <p>
+                      Если передумаете учиться – вернем деньги за 3 рабочих дня
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="learning-section">
+          <div class="learning-section__container">
+            <div class="learning-block">
+              <div class="learning-block__image">
+                <img src="./images/support.png" alt="Помощь и поддержка" />
+              </div>
+              <div class="learning-block__text">
+                <h3>Помощь и поддержка</h3>
+                <p>
+                  Если в процессе обучения возникнут сложности, вы всегда
+                  сможете задать вопрос своему наставнику.
+                  <br /><br />
+                  Раз в несколько уроков вы будете получать большое задание,
+                  которое нужно будет сдавать на проверку код-ревьюеру. Он
+                  внимательно изучит ваш код, найдёт ошибки и поможет вам стать
+                  лучше.
+                </p>
+              </div>
+            </div>
+
+            <div class="learning-block reverse">
+              <div class="learning-block__text">
+                <h3>Методика обучения</h3>
+                <p>
+                  Весь учебный материал структурирован по принципу «спирального
+                  обучения». Сначала вы получаете базовые знания, а затем на
+                  каждом витке спирали углубляетесь в изученные темы, доводя их
+                  понимание до совершенства. Такой подход упрощает обучение и
+                  гарантирует, что вы не пропустите ничего важного.
+                </p>
+              </div>
+              <div class="learning-block__image">
+                <img src="./images/support-2.png" alt="Методика обучения" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="gallery__container">
+            <a
+              href="./images/photo-1.jpg"
+              data-fancybox="gallery"
+              class="gallery__item gallery__item--large"
+            >
+              <img src="./images/photo-1.jpg" alt="Фото 1" />
+            </a>
+            <a
+              href="./images/photo-2.jpg"
+              data-fancybox="gallery"
+              class="gallery__item"
+            >
+              <img src="./images/photo-2.jpg" alt="Фото 2" />
+            </a>
+            <a
+              href="./images/photo-3.jpg"
+              data-fancybox="gallery"
+              class="gallery__item"
+            >
+              <img src="./images/photo-3.jpg" alt="Фото 3" />
+            </a>
+            <a
+              href="./images/photo-4.jpg"
+              data-fancybox="gallery"
+              class="gallery__item"
+            >
+              <img src="./images/photo-4.jpg" alt="Фото 4" />
+            </a>
+            <a
+              href="./images/photo-5.jpg"
+              data-fancybox="gallery"
+              class="gallery__item"
+            >
+              <img src="./images/photo-5.jpg" alt="Фото 5" />
+            </a>
+          </div>
+        </section>
+        <section class="map-section">
+          <div class="map-section__container">
+            <div id="yandex-map" class="map"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <span class="logo__accent-blue">C</span>o<span
+                class="logo__accent-orange"
+                >D</span
+              >e
+              <p>
+                Школа <br />
+                программирования
+              </p>
+            </div>
+            <div class="footer__socials">
+              <a href="#"><img src="./images/instagram.svg" alt="Instagram" /></a>
+              <a href="#"><img src="./images/vk.svg" alt="VK" /></a>
+              <a href="#"><img src="./images/facebook.svg" alt="Facebook" /></a>
+              <a href="#"><img src="./images/youtube.svg" alt="YouTube" /></a>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer__col">
+              <ul class="footer__nav">
+                <li><a href="#">Чему вы научитесь</a></li>
+                <li><a href="#">Процесс обучения</a></li>
+                <li><a href="#">Стоимость</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Регистрация</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <a href="tel:+79999999999" class="footer__contact"
+                >+7 (999) 999 99 99</a
+              >
+              <a href="mailto:info@code.ru">info@code.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2023 — Все права защищены</p>
+          <div class="footer__policies">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal" id="callback-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__window">
+          <button class="modal__close">&times;</button>
+          <form class="modal__form">
+            <h2 class="modal__title">Заказать звонок</h2>
+
+            <label
+              >Имя
+              <input type="text" name="name" placeholder="ваше имя" required />
+            </label>
+
+            <label
+              >Телефон
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+7 XXX - XXX - XX -XX"
+                required
+              />
+            </label>
+
+            <label
+              >Email
+              <input type="email" name="email" placeholder="mail@site.com" />
+            </label>
+
+            <label
+              >Сообщение
+              <textarea
+                name="message"
+                placeholder="Ваше сообщение ..."
+              ></textarea>
+            </label>
+
+            <p class="modal__policy">
+              Нажимая кнопку “Отправить”, соглашаюсь с
+              <a href="#" target="_blank">политикой конфиденциальности</a>
+            </p>
+
+            <button type="submit" class="modal__submit">
+              Отправить <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
