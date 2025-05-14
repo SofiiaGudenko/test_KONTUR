@@ -10,7 +10,7 @@
     --color-cross: #bcbcbc;
     --color-grey-light: #e1e1e1;
     --color-grey-dark: #8e8e8e;
-    --color-border: #9F9F9F;
+    --color-border: #9f9f9f;
     --color-222: #222;
 
     --font-size-xxs: 9px;
@@ -212,12 +212,13 @@ a {
 }
 
 .hero__container {
+    position: relative;
+    overflow: hidden;
     display: flex;
     min-height: 480px;
     align-items: center;
     border-radius: 48px;
     background-color: var(--color-white);
-    background-image: url(./images/bg-image.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -236,11 +237,14 @@ a {
 
 .hero__content {
     flex: 1;
+    padding-top: 50px;
     padding-left: 98px;
 }
 
 .hero__title {
-    font-size: clamp(var(--font-size-lg), calc(1.17vw + 18px), var(--font-size-46));
+    font-size: clamp(var(--font-size-lg),
+            calc(1.17vw + 18px),
+            var(--font-size-46));
     font-weight: var(--font-weight-medium);
     margin-bottom: 24px;
     max-width: 640px;
@@ -251,7 +255,6 @@ a {
     content: "";
     width: 365px;
     display: block;
-    padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #dedede;
 }
@@ -288,6 +291,63 @@ a {
     display: inline-flex;
     align-items: center;
     margin-left: 4px;
+}
+
+.circle-container {
+    right: -30%;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    border-image-source: linear-gradient(137.25deg,
+            #ffffff 21.62%,
+            rgba(255, 255, 255, 0) 75.98%);
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)),
+        linear-gradient(260.38deg, #ffffff -31.68%, rgba(255, 255, 255, 0) 87.52%);
+    backdrop-filter: blur(60px);
+    box-shadow: 0px 30px 100px 0px #0081aa0f;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-2 {
+    position: absolute;
+    z-index: 4;
+    width: 321px;
+    height: 321px;
+}
+
+.circle-3 {
+    z-index: 2;
+    position: absolute;
+    width: 505px;
+    height: 505px;
+}
+
+.circle-4 {
+    z-index: 1;
+    position: absolute;
+    width: 729px;
+    height: 729px;
+}
+
+.circle-5 {
+    width: 995px;
+    height: 995px;
 }
 
 .hero__btn:hover {
@@ -347,7 +407,9 @@ a {
 }
 
 .features__title {
-    font-size: clamp(var(--font-size-lg), calc(2.5vw + 12px), var(--font-size-46));
+    font-size: clamp(var(--font-size-lg),
+            calc(2.5vw + 12px),
+            var(--font-size-46));
     text-align: center;
     font-weight: var(--font-weight-semibold);
     margin-bottom: 34px;
@@ -765,6 +827,11 @@ a {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+    }
+
+    .circle-container {
+        top: 26%;
+        right: 0;
     }
 
     .hero__text {
